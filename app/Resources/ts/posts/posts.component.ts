@@ -29,8 +29,8 @@ export const postsComponent: IComponentOptions = {
     controller: TasksComponent,
     template: `
     <div>
-        <h1>Hello {{pos.name}}</h1>
-        {{vm.message}}
+        <h1>Hello {{vm.title}}</h1>
+        {{vm.content}}
         
         <a href src="" ng-click="vm.create()">create a post</a>
     </div>
