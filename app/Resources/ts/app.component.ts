@@ -4,5 +4,5 @@ class AppComponent {}
 
 export const appComponent: IComponentOptions = {
     controller: AppComponent  ,
-    template:`<tasks></tasks>` 
+    template:`<posts></posts>` 
 };
