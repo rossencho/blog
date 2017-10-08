@@ -1,6 +1,7 @@
 <?php
 
 require 'routes.php';
+require 'db.php';
 
 /**
  * setup the templating engine
@@ -13,8 +14,8 @@ $view->parserExtensions = [
 
 
 /**
- * setup DB configuration
+ * load up DB connection
  */
 $app->container->singleton("db", function(){
-    return new PDO('mysql:host=127.0.0.1;dbname=blog', 'root', 'toor');
+    return (new DataBaseSlim())->connect();
 });
