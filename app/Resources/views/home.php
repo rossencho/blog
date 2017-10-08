@@ -5,7 +5,7 @@
 {% else %}
     {% for post in posts %}
     <div>
-        <h2><a href ="">{{ post.title }}</a></h2>
+        <h2><a href ="{{urlFor("posts.show",{'postId':post.id})}}">{{ post.title }}</a></h2>
         <p> {{post.content}}</p>
     </div>
     {% endfor %}
